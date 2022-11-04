@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Area Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    
+    <div id="container">
+      <h1 class="formula">A = <span>&#8508;</span>r<sup>2</sup></h1>
+        
+      <div id="circleContainer">
+        <button class="circleTransfersBtn active" onclick="circleFunction()">Circle</button>
+
+        <div class="circleMenu">
+          <input
+            type="number"
+            onclick="restFunction()"
+            placeholder="Enter Your Radius"
+            class="circleInput"
+          />
+          <button class="cricleResultBtn" onclick="cricleAreaFunction()">
+            Result
+          </button>
+          <h2 class="cricleResult">Area :</h2>
+        </div>
+      </div>
+
+      <!-- Rectangle -->
+      <div id="rectangleContainer">
+        <button class="rectangleTransfersBtn" onclick="rectangleFunction()">Rectangle</button>
+        <div class="rectangleMenu hidden">
+            <input
+              type="number"
+              onclick="restFunction()"
+              placeholder="Enter Your Length"
+              class="rectangleInput1"
+            />
+            <button class="rectangleResultBtn" onclick="rectangleAreaFunction()">Result</button>
+            <br>
+            <input type=" number"
+            placeholder="Enter Your width"
+            class="rectangleInput2"
+            />
+            
+            <h2 class="rectangleResult">Area :</h2>
+          </div>
+
+        </div>
+
+        <!-- Triangle -->
+        <div id="triangleContainer">
+            <button class="triangleTransfersBtn" onclick="triangleFunction()">Tritangle</button>
+            <div class="triangleMenu hidden">
+              <input
+                type="number"
+                onclick="restFunction()"
+                placeholder="Enter Your Base"
+                class="triangleInput1"
+              />
+              <button class="triangleResultBtn" onclick="triangleAreaFunction()">Result</button>
+              <br>
+              <input type=" number"
+              placeholder="Enter Your Height"
+              class="triangleInput2"
+              />
+              
+              <h2 class="triangleResult">Area :</h2>
+            </div>
+    
+            </div>
+      </div>
+    </div>
+    <script src="./style.js"></script>
+  </body>
+</html>
